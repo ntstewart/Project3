@@ -82,6 +82,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(149, 23);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -89,6 +90,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(144, 23);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4
             // 
@@ -128,8 +130,9 @@
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(129, 151);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(149, 214);
+            this.listBox1.Size = new System.Drawing.Size(149, 139);
             this.listBox1.TabIndex = 9;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
             // 
@@ -137,7 +140,7 @@
             this.listBox2.ItemHeight = 15;
             this.listBox2.Location = new System.Drawing.Point(403, 161);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(144, 199);
+            this.listBox2.Size = new System.Drawing.Size(144, 139);
             this.listBox2.TabIndex = 10;
             // 
             // button1
@@ -148,6 +151,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -227,7 +231,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Golf Score Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
